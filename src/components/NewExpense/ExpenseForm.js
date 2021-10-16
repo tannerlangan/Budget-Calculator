@@ -2,12 +2,17 @@ import React, { lazy } from "react";
 import "./ExpenseForm.css";
 
 function ExpenseForm() {
+
+    const changeListener = (event) => {
+     console.log(event.target.value);
+    }
+
   return (
     <form>
       <div className="new-expense__controls">
         <div className="new-expense__control">
           <lable>Title </lable>
-          <input type="text" />
+          <input type="text" onChange={changeListener}/>
         </div>
         <div className="new-expense__control">
           <lable>Amount </lable>
