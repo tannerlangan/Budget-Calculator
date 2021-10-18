@@ -30,9 +30,13 @@ function App() {
     },
   ];
 
+  const addExpenseListener = expense => {
+    console.log('In app.js');
+    console.log(expense)
+  }
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseListener}/>
       <Expenses expenses={expenses}></Expenses>
     </div>
   );
