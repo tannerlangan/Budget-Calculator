@@ -12,8 +12,6 @@ function Expenses(props) {
     console.log(enteredYear);
   };
 
-  
-
   return (
     <div>
       <Card className="expenses">
@@ -22,7 +20,7 @@ function Expenses(props) {
           onSelectYear={savedYearListener}
         />
         {props.items.map((expense) => (
-         <ExpenseItem
+          <ExpenseItem
             title={expense.title}
             amount={expense.amount}
             date={expense.date}
@@ -32,5 +30,6 @@ function Expenses(props) {
     </div>
   );
 }
+
 
 export default Expenses;
