@@ -23,7 +23,7 @@ const INITIAL_EXPENSES = [
     date: new Date(2021, 2, 28),
   },
   {
-    id: "03",
+    id: "04",
     title: "Dog",
     amount: 590.0,
     date: new Date(2021, 10, 22),
@@ -35,7 +35,6 @@ function App() {
   const[expenses, setNewExpenses] = useState(INITIAL_EXPENSES);
 
   const addExpenseListener = expense => {
-    console.log(expense);
     setNewExpenses((prevExpenses) => {
       return [expense, ...prevExpenses]
     });

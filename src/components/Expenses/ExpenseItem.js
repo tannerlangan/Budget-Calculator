@@ -6,6 +6,7 @@ import React, { useState } from "react";
 function ExpenseItem(props) {
 
   return (
+    <li>
     <Card className="expense-item">
       <ExpenseDate date={props.date} />
       <section className="expense-item__description">
@@ -13,6 +14,7 @@ function ExpenseItem(props) {
         <h2 className="expense-item__price">${props.amount}</h2>
       </section>
     </Card>
+    </li>
   );
 }
 
